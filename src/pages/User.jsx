@@ -44,20 +44,20 @@ function User() {
         </div>
         <div className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 mb-8 md:gap-8">
           <div className="custom-card-image mb-6 md:mb-0">
-            <div className="rounded-xl shadow-xl card image-full">
+            <div className="shadow-xl card image-full">
               <figure>
                 <img src={avatar_url} alt={login}></img>
               </figure>
-              <div className="card-body justify-end">
-                <h2 className="card-title mb-0">{name}</h2>
-                <p>{login}</p>
+              <div className="card-body justify-end text-white">
+                <h2 className="card-title mb-0 text-white">{name}</h2>
+                <p className="flex-grow-0 text-white">{login}</p>
               </div>
             </div>
           </div>
 
           <div className="col-span-2">
             <div className="mb-6">
-              <h1 className="text-3xl card-title">
+              <h1 className="text-3xl card-title text-white">
                 {name}
                 <div className="ml-2 mr-1 badge badge-success">
                   {type}
@@ -79,7 +79,7 @@ function User() {
                   <div className="stat-title text-md">
                     Location
                   </div>
-                  <div className="text-lg stat-value">
+                  <div className="text-lg stat-value text-white">
                     {location}
                   </div>
                 </div>
@@ -89,7 +89,7 @@ function User() {
                   <div className="stat-title text-md">
                     Web site
                   </div>
-                  <div className="text-lg stat-value">
+                  <div className="text-lg stat-value text-white">
                     <a href={`https://${blog}`} target="_blank" rel="noreferrer">{blog}</a>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ function User() {
                   <div className="stat-title text-md">
                     Twitter
                   </div>
-                  <div className="text-lg stat-value">
+                  <div className="text-lg stat-value text-white">
                     <a href={`https://twitter.com/${twitter_username}`} target="_blank" rel="noreferrer">{twitter_username}</a>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ function User() {
             <div className="stat-title pr-5">
               Followers
             </div>
-            <div className="stat-value pr-5 text-3xl md:text-4xl">
+            <div className="stat-value pr-5 text-3xl md:text-4xl text-white">
               {followers}
             </div>
           </div>
@@ -126,7 +126,7 @@ function User() {
             <div className="stat-title pr-5">
               Following
             </div>
-            <div className="stat-value pr-5 text-3xl md:text-4xl">
+            <div className="stat-value pr-5 text-3xl md:text-4xl text-white">
               {following}
             </div>
           </div>
@@ -137,7 +137,7 @@ function User() {
             <div className="stat-title pr-5">
               Public Repos
             </div>
-            <div className="stat-value pr-5 text-3xl md:text-4xl">
+            <div className="stat-value pr-5 text-3xl md:text-4xl text-white">
               {public_repos}
             </div>
           </div>
@@ -148,7 +148,7 @@ function User() {
             <div className="stat-title pr-5">
               Public Gists
             </div>
-            <div className="stat-value pr-5 text-3xl md:text-4xl">
+            <div className="stat-value pr-5 text-3xl md:text-4xl text-white">
               {public_gists}
             </div>
           </div>
