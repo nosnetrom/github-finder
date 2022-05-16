@@ -9,7 +9,7 @@ function Alert() {
         <div className="flex items-start mb-4 space-x-2">
             {alert.type === 'error' && (
                 <svg width="20" height="20">
-                <g stroke="#d40000" stroke-width="2.23"><circle fill="#dfdfdf" cx="10" cy="10" r="8.5652"/>
+                <g stroke="#d40000" strokeWidth="2.23"><circle fill="#dfdfdf" cx="10" cy="10" r="8.5652"/>
                 <path d="M10,4.188V12.657M10,13.438V15.813"/></g>
                 </svg>
             )}
